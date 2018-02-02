@@ -1,0 +1,231 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+	<title>Profile Dashboard || Hi Dude! Build your profile here for free</title>
+    	<meta http-equiv="content-type" content="text/html;charset=utf-8" />  
+    	<link rel="stylesheet" type="text/css" href="hidude.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<link href="http://hidude.co/xcrud/themes/bootstrap/xcrud.css" rel="stylesheet" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<!-- CSS -->
+   <link rel="stylesheet" href="assets/css/style.css">
+   <!-- jQuery Script -->
+   <script src="assets/js/script.js"></script>
+
+    </head>
+    <body style="background-color:#eee; overflow:auto; ">
+
+    
+        
+
+
+
+<div class="w3-navbar w3-black w3-top w3-fixed"style="height:100px;">
+    
+         
+ <div class="page-logo">
+                    <a href="http://hidude.co/" class="navbar-brand"><img src="http://hidude.co/images/logo.png"></a>
+                                                    
+                   <div class="container">
+
+    <div class="w3-dropdown-onclick" style="margin-left:91%; margin-top:10px;  ">
+      <button class="w3-button" onclick="myFunction()">Username  <img alt="" class="img-circle" src="http://hidude.co/images/placeholder.png" style=" width:40px;height:40px;" />
+       
+      </button>
+      </div>
+       
+                         
+   
+      <div id="demo" class="w3-dropdown-content-right w3-bar-block w3-card-4" style="float:right;display:none;font-size:13px;background-color:#5b6f7c;">
+      <a href="#" class="w3-bar-item w3-button"><i class="fa fa-user-o"></i>Profile</a>
+        <a href="#" class="w3-bar-item w3-button"><i class="fa fa-key"></i>Settings</a>
+        <a href="#" class="w3-bar-item w3-button"><i class="fa fa-key"></i>Logout</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+          
+
+    <div class="icon-bar">
+     <div class="vertical-menu">
+  <a href="#"><i class="material-icons">&#xe3b0;</i>Preview</a>
+  <div class="active"><a href="#"><i class="material-icons">&#xe8b8;</i>Profile</a></div>
+  <a href="#"><i class="material-icons">&#xe8b8;</i>Settings</a>
+  <a href="#"><i class="material-icons">&#xe80d;</i>Social Profile</a>
+  <a href="#"><i class="fa fa-power-off"></i>Logout</a>
+  
+</div>
+</div>
+
+  <div class="panel-heading"><i class="fa fa-users"></i>YourProfile</div>
+     
+<form id="myform" action="" method="GET">
+
+ 
+<div class="btn-group">
+  <button class="button" style="background-color:#4169E1">Save & Return</button>
+  <button class="button" style="background-color: gold">Return</button>
+</div>
+
+
+ <table>
+  <tr>
+    <td>First Name: </td>
+    <td>
+      <input type="text" name="fullname"style="width:100%"></td>
+    </tr>
+  <tr>
+  <td>Last Name: </td>
+  <td><input type="text" name="fullname" style="width:100%"></td>
+</tr>
+  <tr>
+    <td>Name: </td>
+    <td>
+      <input type="text" name="fullname" style="width:100%"></td>
+    </tr>
+  <tr>
+    <td>User Name: </td>
+    <td>
+      <input type="text" name="fullname"style="width:100%"></td>
+    </tr>
+<tr>
+    <td>Password: </td>
+    <td>
+      <input type="text" name="fullname"style="width:100%"></td>
+    </tr>
+<tr>
+    <td>Email: </td>
+    <td>
+      <input type="text" name="fullname"style="width:100%"></td>
+    </tr>
+     
+ <tr>
+<td>About</td>
+<td> <textarea style="resize:vertical; margin-left:150px;width:100%;"> </textarea></td>
+</tr>
+  <tr>
+
+    <td> Picture<img src="http://ubuntuhandbook.org/wp-content/uploads/2016/05/notifyosd-icon.png" style="width:30px;height: 35px;"></td>
+    <td>
+    <div class="images">
+     <span class="btn btn-default  disabled" style="background-color:none; margin-left:150px; padding-right:2px;">
+    no image <!-- <input type="file"> -->
+</span>
+<span class="btn btn-default  btn-file" accept="image/*" onchange="loadFile(event)" style="background-color:#008B88; margin-left:-4px;">
+  <img id="output" style="max-width:100px";/>
+
+  <img src="https://png.icons8.com/metro/540/circled-up.png"style="width:20px;height: 20px;background-color:none"> Addimage <input type="file">
+</span>
+</div>
+</td>
+</tr>
+
+<br>
+<br>
+<tr>
+<td>Signature<img src="http://ubuntuhandbook.org/wp-content/uploads/2016/05/notifyosd-icon.png" style="width:30px;height: 35px;"></td>
+<td>
+  <div class="images">
+    <span class="btn btn-default  disabled" style="background-color:none; margin-left:150px; padding-right:2px;">
+    no image <!-- <input type="file"> -->
+</span>
+<span class="btn btn-default btn-file" accept="image/*" onchange="loadFile1(event)" style="background-color:#008B88; margin-left:-4px; ">
+   <img id="output1" style="max-width:100px";/>
+    <img src="https://png.icons8.com/metro/540/circled-up.png"style="width:20px;height: 20px;background-color:none;">  Addimage <input type="file">
+    </span>
+  </div>
+  </td>
+</tr>
+
+   <tr>
+    <td>Date Of Birth
+ </td>
+    <td>
+      <input type="text" name="fullname"style="width:100%; margin-top:10px; "></td>
+    </tr>
+  <tr>
+  <td>Current City </td>
+  <td><input type="text" name="fullname" style="width:100%"></td>
+</tr>
+<tr>
+  <td>Freelance Status</td>
+<td>
+  <input type="checkbox" style="margin-left:150px; " value=""></td>
+</tr>
+  <tr>
+    <td>Marital Status
+ </td>
+    <td>
+      <input type="text" name="fullname" style="width:100%"></td>
+    </tr>
+  <tr>
+    <td>Nationality </td>
+    <td>
+      <input type="text" name="fullname"style="width:100%"></td>
+    </tr>
+<tr>
+    <td>Phone</td>
+    <td>
+      <input type="text" name="fullname"style="width:100%"></td>
+    </tr>
+<tr>
+    <td>Website </td>
+    <td>
+      <input type="text" name="fullname"style="width:100%"></td>
+    </tr>
+     
+ <tr> 
+<tr>
+<td>Download Resume</td>
+<td>
+  <div class="images">
+    <span class="btn btn-default  disabled" style="background-color:none; margin-left:150px; padding-right:2px;">
+    no file <!-- <input type="file"> -->
+</span>
+<span class="btn btn-default btn-file" id="file-input" style="background-color:#008B88; margin-left:-4px; ">
+   
+
+ <img src="https://png.icons8.com/metro/540/circled-up.png"style="width:20px;height: 20px;background-color:none">  Add File <input type="file">
+   
+</span>
+  </div>
+  </td>
+</tr>
+
+<tr>
+    <td>Latitude</td>
+    <td>
+      <input type="text" name="fullname"style="width:100%;margin-top:10px;"></td>
+    </tr>
+<tr>
+    <td>Lonigtude</td>
+    <td>
+      <input type="text" name="fullname"style="width:100%"></td>
+    </tr>
+    <tr>
+  <td>Active</td>
+<td>
+  <input type="checkbox" style="margin-left:150px; " value=""></td>
+</tr>
+<td>
+<br>
+<br>
+<br>
+</td>
+</table>
+</form>
+
+
+</body>
+</html>  
+            
+
